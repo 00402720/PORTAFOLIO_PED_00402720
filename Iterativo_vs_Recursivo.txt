@@ -1,0 +1,10 @@
+Diferencias entre el algoritmo de Euclides, en su forma iterativa y recursiva
+
+La mayor diferencia entre ambos proviene de la forma en que el codigo de desarrolla. En el caso de una forma iterativa se utiliza, ya sea desde el codigo fuente
+o una funcion llamada por el codigo fuente, una forma de bucle con una condicion especifica hasta detener el proceso, muchas veces este bucle contiene una variable
+tipo contador que cambia a medida el objetivo del bucle se cumple.
+En el caso de una forma recursiva el proceso se basa en una misma funcion (la cual es llamada una vez por el codigo fuente) que se invoca a si misma basado en una 
+condicion dento de la misma funcion. El objetivo de esto es actualizar los valores que entran junto a la funcion hasta que estos mismos no sean capaces de completar
+la condicion previamente establecida. A medida la funcion se invoca a si misma uno de los valores toma un rol de indicador, en el cual se basa la condicion para
+llamar o no a la funcion, mientras que si hubiese otro valor (como es este el caso) toma un rol de contador para devolver el resultado esperado luego de este
+proceso.
