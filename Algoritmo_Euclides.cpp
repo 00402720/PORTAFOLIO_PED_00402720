@@ -37,5 +37,13 @@ int calculador_de_mcm(int valor1, int valor2)
     {
         return valor2;
     }
-    return calculador_de_mcm(valor2 % valor1, valor1) ;
+    else if(valor1 >= valor2)
+    {
+        return calculador_de_mcm(valor1 - valor2, valor2);
+    }
+    else
+    {
+        return calculador_de_mcm(valor2 - valor1, valor1);
+    }
+    
 }
